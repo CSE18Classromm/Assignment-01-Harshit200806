@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Hostel Booking</title>
+
+<style>
+body {
+ margin: 0;
+ padding: 30px 15px;
+ background: rgb(231, 193, 193);
+ color: rgb(132, 3, 3);
+}
+
+.container {
+ max-width: 600px;
+ margin: 0 auto;
+ background: white;
+ border-radius: 10px;
+ border: 1px solid rgb(156, 39, 39);
+}
+
+.header {
+ color: rgb(237, 49, 197);
+ padding: 20px;
+ text-align: center;
+ border-bottom: 1px solid black;
+}
+
+
+.form-area {
+ padding: 25px 30px;
+}
+
+table {
+ width: 100%;
+}
+
+td {
+ padding: 10px 0;
+}
+
+input, select {
+ width: 100%;
+ padding: 8px;
+ border: 1px solid black;
+ background: white;
+ color: black;
+}
+
+.radio-group input {
+ width: auto;
+}
+
+.submit-btn {
+ text-align: center;
+ padding-top: 20px;
+}
+
+button {
+ background: white;
+ color: black;
+ border: 1px solid black;
+ padding: 12px 40px;
+ font-size: 1.1rem;
+ border-radius: 6px;
+ cursor: pointer;
+}
+
+button:hover {
+ background: rgb(216, 53, 234);
+ color: white;
+}
+
+.note {
+ font-size: 1.rem;
+ color: rgb(93, 30, 84);
+ text-align: center;
+ margin-top: 25px;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+<div class="header">
+<h2>Hotel Booking Form</h2>
+</div>
+
+<div class="form-area">
+<form>
+<table>
+
+<tr>
+<td>FULL NAME :</td>
+<td><input type="text" name="name" required placeholder="YOUR FULL NAME"></td>
+</tr>
+
+<tr>
+<td>EMAIL :</td>
+<td><input type="email" name="email" required placeholder="example@email"></td>
+</tr>
+
+<tr>
+<td>DATE OF BIRTH :</td>
+<td><input type="date" name="dob" required></td>
+</tr>
+
+<tr>
+<td>PHONE NUMBER :</td>
+<td><input type="tel" name="phone" required placeholder="10-DIGIT NUMBER"></td>
+</tr>
+
+<tr>
+<td>GENDER :</td>
+<td class="radio-group">
+<label><input type="radio" name="gender" value="male"> Male</label>
+<label><input type="radio" name="gender" value="female"> Female</label>
+<label><input type="radio" name="gender" value="other"> Other</label>
+</td>
+</tr>
+
+<tr>
+<td>ROOM :</td>
+<td class="radio-group">
+<label><input type="radio" name="room" value="1-bed"> 1 bed</label>
+<label><input type="radio" name="room" value="2-bed"> 2 bed</label>
+<label><input type="radio" name="room" value="3-bed"> 3 bed</label>
+</td>
+</tr>
+
+<tr>
+<td>DURATION:</td>
+<td>
+<select name="duration" required>
+<option value="">-- Choose --</option>
+<option value="3">3 months</option>
+<option value="6">6 months</option>
+<option value="12">12 months</option>
+<option value="more">More than 1 year</option>
+</select>
+</td>
+</tr>
+
+<tr class="submit-btn">
+<td colspan="2">
+<button type="submit">Submit Booking</button>
+</td>
+</tr>
+
+</table>
+
+<div class="note">
+We will contact you shortly after receiving your request.
+</div>
+
+</form>
+</div>
+</div>
+</body>
+</html>
